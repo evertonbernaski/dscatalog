@@ -1,5 +1,6 @@
 package com.dscatalog.dscatalog.tests;
 
+import com.dscatalog.dscatalog.dto.CategoryDTO;
 import com.dscatalog.dscatalog.dto.ProductDTO;
 import com.dscatalog.dscatalog.entities.Category;
 import com.dscatalog.dscatalog.entities.Product;
@@ -17,5 +18,15 @@ public class Factory {
     public static ProductDTO createProductDTO() {
         Product product = createProduct();
         return new ProductDTO(product, product.getCategories());
+    }
+
+    public static Category createCategory() {
+        Category category =new Category(1L, "Informática");
+        return category;
+    }
+
+    public static CategoryDTO createCategoryDTO() {
+        Category category = createCategory();
+        return new CategoryDTO(category);
     }
 }
