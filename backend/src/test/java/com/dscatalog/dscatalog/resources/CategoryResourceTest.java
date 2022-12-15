@@ -1,9 +1,7 @@
 package com.dscatalog.dscatalog.resources;
 
 import com.dscatalog.dscatalog.dto.CategoryDTO;
-import com.dscatalog.dscatalog.dto.ProductDTO;
 import com.dscatalog.dscatalog.services.CategoryService;
-import com.dscatalog.dscatalog.services.ProductService;
 import com.dscatalog.dscatalog.services.exceptions.DataBaseException;
 import com.dscatalog.dscatalog.services.exceptions.ResourceNotFoundException;
 import com.dscatalog.dscatalog.tests.Factory;
@@ -21,7 +19,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doNothing;

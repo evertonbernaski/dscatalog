@@ -1,9 +1,7 @@
 package com.dscatalog.dscatalog.services;
 
 import com.dscatalog.dscatalog.dto.CategoryDTO;
-import com.dscatalog.dscatalog.dto.ProductDTO;
 import com.dscatalog.dscatalog.entities.Category;
-import com.dscatalog.dscatalog.entities.Product;
 import com.dscatalog.dscatalog.repositories.CategoryRepository;
 import com.dscatalog.dscatalog.services.exceptions.DataBaseException;
 import com.dscatalog.dscatalog.services.exceptions.ResourceNotFoundException;
@@ -24,7 +22,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doThrow;
